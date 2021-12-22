@@ -20,6 +20,6 @@ jobs:
           username: ubuntu
           key: ${{ secrets.PRIVATEKEY }}
           port: 22
-          scripts: |
+          script: |
             whoami
           
