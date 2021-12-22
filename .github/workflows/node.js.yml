@@ -21,5 +21,5 @@ jobs:
           key: ${{ secrets.PRIVATEKEY }}
           port: 22
           scripts: |
-            ls -la
+            whoami
           
