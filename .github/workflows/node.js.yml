@@ -17,6 +17,7 @@ jobs:
       - name: Login into Remote server
         uses: appleboy/ssh-action@master
         with:
-          host: ${{ secrets.PEMFILE }}
+          host: ${{ secrets.IPADDRESS }}
           username: ubuntu
+          fingerprint: ${{ secrets.PEMFILE }}
           script: whoami
