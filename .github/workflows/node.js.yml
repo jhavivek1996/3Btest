@@ -26,9 +26,9 @@ jobs:
             dir="react-test"
             if [ -d "$dir" ]; then
               git clone git@github.com:jhavivek1996/3Btest.git
-              cd 3Btest/react-test
+              cd /3Btest/react-test
               npm i
             else
-              cd 3Btest && git pull origin master
+              cd /3Btest && git pull origin master
             fi
           
