@@ -21,9 +21,5 @@ jobs:
           key: ${{ secrets.PRIVATEKEY }}
           port: 22
           script: |
-            whoami
-            git clone git@github.com:jhavivek1996/3Btest.git
-            cd 3Btest
-            npm i
-            npm start
+            git clone git@github.com:jhavivek1996/3Btest.git && cd 3Btest && npm i && npm start
           
