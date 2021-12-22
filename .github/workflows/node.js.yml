@@ -14,11 +14,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Login into Remote server
-        run: ssh -i ${{ secrets.PRIVATEKEY }} ubuntu@${{ secrets.IPADDRESS }}
-#         uses: appleboy/ssh-action@master
-#         with:
-#           host: ${{ secrets.IPADDRESS }}
-#           username: ubuntu
-#           key: ${{ secrets.PRIVATEKEY }}
-#           port: 22
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.IPADDRESS }}
+          username: ubuntu
+          key: ${{ secrets.PRIVATEKEY }}
+          port: 22
+          scripts: |
+            ls -la
           
