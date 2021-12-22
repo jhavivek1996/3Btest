@@ -19,5 +19,5 @@ jobs:
         with:
           host: ${{ secrets.IPADDRESS }}
           username: ubuntu
-          fingerprint: ${{ secrets.PEMFILE }}
+          key: ${{ secrets.PRIVATEKEY }}
           script: whoami
