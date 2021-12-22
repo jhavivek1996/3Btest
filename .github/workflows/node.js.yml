@@ -21,7 +21,7 @@ jobs:
           key: ${{ secrets.PRIVATEKEY }}
           port: 22
           script: |
-           dir="react-test"
+           dir="3Btest"
             if [ -d "$dir" ]; then
                 echo "Directory exist"
                 cd 3Btest && git pull origin master
