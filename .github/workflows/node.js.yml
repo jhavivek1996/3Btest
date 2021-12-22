@@ -21,5 +21,12 @@ jobs:
           key: ${{ secrets.PRIVATEKEY }}
           port: 22
           script: |
-            git clone git@github.com:jhavivek1996/3Btest.git && cd 3Btest/react-test && npm i && npm start
+            git clone git@github.com:jhavivek1996/3Btest.git
+            cd 3Btest/react-test
+            dir="react-test"
+            if [ -d "$dir" ]; then
+              echo "Directory exist"
+            else
+              echo "Not Exist"
+            fi
           
